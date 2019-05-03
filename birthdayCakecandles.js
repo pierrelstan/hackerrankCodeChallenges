@@ -1,8 +1,7 @@
 var arr=[
     18 ,90 ,90 ,13 ,90, 75, 90 ,8,90,43];
-
+    
     var n = 2;
-
     // var arr=[
     //     3,2,3,1];
     //     var n = 4;
@@ -15,6 +14,7 @@ var arr=[
     var newValueOf_n=[];
     var theNew_n_ForTheMaxValueOftheArray_arr=[];
     function App(){
+
         // find if n is   less than all values in the array arr if it's true we must
         // return the greatest value in the arr as the value of the variables n;
         
@@ -22,7 +22,6 @@ var arr=[
             var MaxValueOftheArray_arr= Math.max(...arr);
         // 2) compare if the variables n is less than the max value of the array arr
         var findIf_n_existIn_arr= arr.filter(function(arr){
-// console.log(arr)
          if(n === arr ){ 
            newValueOf_n.push(arr)
             return newValueOf_n;
@@ -37,12 +36,12 @@ var arr=[
                 // MaxValueOftheArray_arr = MaxValueOftheArray_arr-=1;
                 if(i === n){
                     newValueOf_n.push(MaxValueOftheArray_arr)
-                    // console.log(newValueOf_n)
+                   
                     return newValueOf_n;
                 }
                 else {
                     newValueOf_n.push(MaxValueOftheArray_arr)
-                    // console.log(newValueOf_n)
+                
                     return newValueOf_n;
                 }
             }
@@ -52,17 +51,13 @@ var arr=[
         // 4) find the right value
         findIf_n_existIn_arr.filter((dn)=> {
             if(n === dn ){
-                // n-=1;
                 theOuput_n.push(dn)
-                // console.log(theOuput_n)
             }
             else {
               theOuput_n.push(MaxValueOftheArray_arr);
-            //   console.log(theOuput_n)
-            
             }
-        })
-        // console.log(theOuput_n[0])
+        });
+  
 
 
         var resultOuput_n= theOuput_n[0];
