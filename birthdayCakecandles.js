@@ -8,7 +8,6 @@ var arr=[
     //     3,2,3,1];
     //     var n = 4;
 
-    var thenewArray_arr=[];
     var output=[];
     var theOuput_n=[];
     var newValueOf_n=[];
