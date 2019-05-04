@@ -1,4 +1,4 @@
-
+'use strict'
 
 var arr=[
     18 ,90 ,90 ,13 ,90, 75, 90 ,8,90,43];
@@ -7,17 +7,15 @@ var arr=[
     // var arr=[
     //     3,2,3,1];
     //     var n = 4;
+
     var thenewArray_arr=[];
-    var arrayTwo=[];
     var output=[];
-    var newcomparedArr=[];
-    // var newArrForN=[]
     var theOuput_n=[];
     var newValueOf_n=[];
     var theNew_n_ForTheMaxValueOftheArray_arr=[];
     function App(){
 
-        // find if n is   less than all values in the array arr if it's true we must
+        // find if n is  less then all values in the array arr if it's true we must
         // return the greatest value in the arr as the value of the variables n;
         
         // 1) search the max values in the array arr
@@ -51,7 +49,7 @@ var arr=[
         });
      
         // 4) find the right value
-        findIf_n_existIn_arr.filter((dn)=> {
+        findIf_n_existIn_arr.filter(function(dn){
             if(n === dn ){
                 theOuput_n.push(dn)
             }
@@ -63,7 +61,7 @@ var arr=[
 
 
         var resultOuput_n= theOuput_n[0];
-        arr.filter((data)=>{
+        arr.filter(function (data){
                    if(data===resultOuput_n){
                        output.push(data)
                    }
